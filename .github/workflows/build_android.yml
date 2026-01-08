@@ -17,7 +17,7 @@ on:
 env:
   # 4.4
   SCONSFLAGS: >-
-    arch=arm64
+    arch=arm32
     strict_checks=yes
     debug_symbols=no
     module_text_server_fb_enabled=yes
@@ -25,7 +25,7 @@ env:
   # 4.5+
   # Ideally we'd use dev_mode=yes. Unfortunately, v8 headers contain warnings. So we manually set some dev_mode options.
   SCONS_FLAGS: >-
-    arch=arm64
+    arch=arm32
     verbose=yes
     warnings=extra
     strict_checks=yes
